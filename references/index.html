@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+                <title>CTLI Milankovitch Cycles and Ice Ages Project</title>
+        		<style>
+        			@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+        			@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        			html {
+        				background-color: #F1F4F5;
+        			}
+        			body {
+        				margin: 0;
+        			}
+        			#header {
+        				align-items: center;
+        				height: 528px;
+        				line-height: 528px;
+        				background-color: white;
+        			}
+        			#header::before {
+        				content: "";
+        				background-image: url(../banner/banner.jpg);
+        				background-size: cover;
+        				position: absolute;
+        				opacity: 0.5;
+        				height: 528px;
+        				width:100%;
+        			}
+        			#header h1 {
+        				position: relative;
+        				text-align: center;
+        				font-family: Indie Flower;
+        				font-size: 70px;
+        				height: 300px;
+        				line-height: 400px;
+        				margin: 0;
+        			}
+        			#header h2 {
+        				position: relative;
+        				text-align: center;
+        				height: 100px;
+        				line-height: 100px;
+        				margin: 0;
+        			}
+        			#navBar ul {
+        				list-style-type: none;
+        				margin: 0;
+        				padding: 0;
+        				overflow: hidden;
+        				background-color: #96DCFE;
+        			}
+        			#navBar li {
+        				float: left;
+        			}
+        			#navBar li a {
+        				display: block;
+        				padding: 20px 50px;
+        				text-align: center;
+        				text-decoration: none;
+        				font-family: Rowdies;
+        				font-size: 18px;
+        				color: white;
+        			}
+        			#navBar li a:hover, .dropDown:hover button{
+        				background-color: #069EE8;
+        			}
+        			.dropDown {
+        				float: left;
+        				overflow: hidden;
+        			}
+        			.dropDown button {
+        				display: block;
+        				padding: 20px 50px;
+        				text-align: center;
+        				text-decoration: none;
+        				font-family: Rowdies;
+        				font-size: 18px;
+        				color: white;
+        				background-color: inherit;
+        				border: none;
+        				outline: none;
+        			} 
+        			.dropDown-content {
+        				display:none;
+        				position: absolute;
+        				background-color:#727677;
+        				min-width: 160px;
+        				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        				z-index: 1;
+        			}
+        			.dropDown-content a {
+        			  float: none;
+        			  color: #96DCFE;
+        			  padding: 20px 50px;
+        			  text-decoration: none;
+        			  font-family: Rowdies;
+        			  font-size: 18px;
+        			  display: block;
+        			  text-align: left;
+        			}
+        			.dropDown-content a:hover{
+        				color: #069EE8;
+        			}
+        			.dropDown:hover .dropDown-content {
+        			  display: block;
+        			}
+        			#tutorials {
+        				margin: 0 auto;
+        				width: 800px;
+        				line-height: 40px;
+        				font-family: Helvetica;
+        				background-color: white;
+        			}
+        			#tutorials p {
+        				margin: 0 auto;
+        			}
+					
+					.image {
+						margin: 0 auto;
+						width: 600px;
+						display: block;
+					}
+        			#end {
+        				background-color: #086089;
+        				color: white;
+        				height: 60px;
+        				line-height: 60px;
+        				text-align: center;
+        			}
+        			#t1 {
+        				text-align: center;
+        				margin: 0 auto;
+        				width: 800px;
+        				background-color: #96DCFE;
+        				color: #4A4B4C;
+        				font-family: Rowdies;
+        				font-size: 24px;
+        				height: 60px;
+        				line-height: 60px;
+        			}
+        			#tutorials br {
+        				content: "";
+        				margin: 4em;
+        				display: block;
+        				font-size: 24%;
+        			}
+					
+					.subheading_text {
+					 overflow: hidden;
+					 text-align: center;
+					 color: #96DCFE;
+					 font-family: Rowdies;
+					 font-size: 20px;
+					}
+					.subheading_text::before,
+					.subheading_text::after {
+					 background-color: #96DCFE;
+					 content: "";
+					 display: inline-block;
+					 height: 5px;
+					 position: relative;
+					 vertical-align: middle;
+					 width: 50%;
+					}
+					.subheading_text::before {
+					 right: 0.5em;
+					 margin-left: -50%;
+					}
+					.subheading_text::after {
+					 left: 0.5em;
+					 margin-right: -50%;
+					}
+        			#content {
+        				margin: 0 200px;
+        				background-color: white;
+        			}
+        		</style>
+    </head>
+    <body>
+        <div id="header">
+        	<h1>
+        		When and How Do Ice Ages Happen?
+        	</h1>
+        	<h2>
+        		CTLI Milankovitch Cycles and Ice Ages Project
+        	</h2>
+        </div>
+        <div id="navBar">
+        	<ul>
+        	  <li><a href="../main%20page/index.html">Home</a></li>
+        	  <li><a href="../Applications/index.html">Applications</a></li>
+        	  <div class="dropDown">
+        		<button>
+        			Tutorials
+        		</button>
+        		<div class="dropDown-content">
+        			<a href="../application1%20tutorial/index.html">Earth Orbit Application Tutorial</a>
+        			<a href="../application2%20tutorial/index.html">Water Cycle Application Tutorial</a>
+        			<a href="../application3%20tutorial/index.html">Delta 18O and Insolation Data Graph Application Tutorial</a>
+        		</div>
+        	  </div>
+        	  <li><a href="../Use%20in%20Class/index.html">In Class</a></li>
+        	  <li><a href="../references/index.html">References</a></li>
+        	</ul>
+        </div>
+		<div id="content">
+			<br>
+			<div id="t1">
+				References
+			</div>
+			<div id="tutorials">
+				<ol>
+				   <li>
+				      Kipp & Zonen Sep 3 2018, K. (2020, February 21). Solar Radiation and the Sun. Retrieved June 30, 2020, from https://www.azom.com/article.aspx?ArticleID=16595
+				   </li>
+				    <li>
+				        Dunbar, B. (2015, June 16). What Is Earth? Retrieved June 30, 2020, from https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-earth-58.html
+				    </li>
+				    <li>
+				        Harper, D., & Stockman, L. M. (1995). What Does Obliquity Mean? Retrieved June 30, 2020, from https://www.obliquity.com/info/meaning.html
+				    </li>
+				    <li>
+				        Tate, J. (2016, April 26). Eccentricity. Retrieved June 30, 2020, from https://www.universetoday.com/57964/eccentricity/
+				    </li>
+				    <li>
+				        Stern, D. P. (2016, October 10). Precession. Retrieved June 30, 2020, from https://www-spof.gsfc.nasa.gov/stargaze/Sprecess.htm
+				    </li>
+				    <li>
+				        Chaplin, Martin M. (2020, May 20). Water Molecule Structure. Retrieved June 30, 2020, from http://www1.lsbu.ac.uk/water/water_molecule.html
+				    </li>
+				    <li>
+				        Piana, Mark E. “Foraminifera Shell Isotope Analysis.” Foraminifera Shells, www.seas.harvard.edu/climate/eli/research/equable/evidence_foram.html.
+				    </li>
+				    <li>
+				        Laskar, J., et al. “A Long-Term Numerical Solution for the Insolation Quantities of&nbsp;the&nbsp;Earth.” Astronomy &amp; Astrophysics, vol. 428, no. 1, 2004, pp. 261–285., doi:10.1051/0004-6361:20041335.
+				    </li>
+				    <li>
+				        Lisiecki, Lorraine E., and Maureen E. Raymo. “A Pliocene-Pleistocene Stack of 57 Globally Distributed Benthic δ18O Records.” Paleoceanography, vol. 20, no. 1, 2005, doi:10.1029/2004pa001071.
+				    </li>
+				</ol>
+			</div>
+			<br>
+		</div>
+		<div id="end">
+			For updates to this website, please contact Clark Xie (xiezhengkai199982@gmail.com).
+		</div>
+    </body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+                <title>CTLI Milankovitch Cycles and Ice Ages Project</title>
+        		<style>
+        			@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+        			@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        			html {
+        				background-color: #F1F4F5;
+        			}
+        			body {
+        				margin: 0;
+        			}
+        			#header {
+        				align-items: center;
+        				height: 528px;
+        				line-height: 528px;
+        				background-color: white;
+        			}
+        			#header::before {
+        				content: "";
+        				background-image: url(../banner/banner.jpg);
+        				background-size: cover;
+        				position: absolute;
+        				opacity: 0.5;
+        				height: 528px;
+        				width:100%;
+        			}
+        			#header h1 {
+        				position: relative;
+        				text-align: center;
+        				font-family: Indie Flower;
+        				font-size: 70px;
+        				height: 300px;
+        				line-height: 400px;
+        				margin: 0;
+        			}
+        			#header h2 {
+        				position: relative;
+        				text-align: center;
+        				height: 100px;
+        				line-height: 100px;
+        				margin: 0;
+        			}
+        			#navBar ul {
+        				list-style-type: none;
+        				margin: 0;
+        				padding: 0;
+        				overflow: hidden;
+        				background-color: #96DCFE;
+        			}
+        			#navBar li {
+        				float: left;
+        			}
+        			#navBar li a {
+        				display: block;
+        				padding: 20px 50px;
+        				text-align: center;
+        				text-decoration: none;
+        				font-family: Rowdies;
+        				font-size: 18px;
+        				color: white;
+        			}
+        			#navBar li a:hover, .dropDown:hover button{
+        				background-color: #069EE8;
+        			}
+        			.dropDown {
+        				float: left;
+        				overflow: hidden;
+        			}
+        			.dropDown button {
+        				display: block;
+        				padding: 20px 50px;
+        				text-align: center;
+        				text-decoration: none;
+        				font-family: Rowdies;
+        				font-size: 18px;
+        				color: white;
+        				background-color: inherit;
+        				border: none;
+        				outline: none;
+        			} 
+        			.dropDown-content {
+        				display:none;
+        				position: absolute;
+        				background-color:#727677;
+        				min-width: 160px;
+        				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        				z-index: 1;
+        			}
+        			.dropDown-content a {
+        			  float: none;
+        			  color: #96DCFE;
+        			  padding: 20px 50px;
+        			  text-decoration: none;
+        			  font-family: Rowdies;
+        			  font-size: 18px;
+        			  display: block;
+        			  text-align: left;
+        			}
+        			.dropDown-content a:hover{
+        				color: #069EE8;
+        			}
+        			.dropDown:hover .dropDown-content {
+        			  display: block;
+        			}
+        			#tutorials {
+        				margin: 0 auto;
+        				width: 800px;
+        				line-height: 40px;
+        				font-family: Helvetica;
+        				background-color: white;
+        			}
+        			#tutorials p {
+        				margin: 0 auto;
+        			}
+					
+        			#end {
+        				background-color: #086089;
+        				color: white;
+        				height: 60px;
+        				line-height: 60px;
+        				text-align: center;
+        			}
+        			#t1 {
+        				text-align: center;
+        				margin: 0 auto;
+        				width: 800px;
+        				background-color: #96DCFE;
+        				color: #4A4B4C;
+        				font-family: Rowdies;
+        				font-size: 24px;
+        				height: 60px;
+        				line-height: 60px;
+        			}
+        			#tutorials br {
+        				content: "";
+        				margin: 4em;
+        				display: block;
+        				font-size: 24%;
+        			}
+					
+					.subheading_text {
+					 overflow: hidden;
+					 text-align: center;
+					 color: #96DCFE;
+					 font-family: Rowdies;
+					 font-size: 20px;
+					}
+					.subheading_text::before,
+					.subheading_text::after {
+					 background-color: #96DCFE;
+					 content: "";
+					 display: inline-block;
+					 height: 5px;
+					 position: relative;
+					 vertical-align: middle;
+					 width: 50%;
+					}
+					.subheading_text::before {
+					 right: 0.5em;
+					 margin-left: -50%;
+					}
+					.subheading_text::after {
+					 left: 0.5em;
+					 margin-right: -50%;
+					}
+        			#content {
+        				margin: 0 200px;
+        				background-color: white;
+        			}
+        		</style>
+    </head>
+    <body>
+        <div id="header">
+        	<h1>
+        		When and How Do Ice Ages Happen?
+        	</h1>
+        	<h2>
+        		CTLI Milankovitch Cycles and Ice Ages Project
+        	</h2>
+        </div>
+        <div id="navBar">
+        	<ul>
+        	  <li><a href="../main%20page/index.html">Home</a></li>
+        	  <li><a href="../Applications/index.html">Applications</a></li>
+        	  <div class="dropDown">
+        		<button>
+        			Tutorials
+        		</button>
+        		<div class="dropDown-content">
+        			<a href="../application1%20tutorial/index.html">Earth Orbit Application Tutorial</a>
+        			<a href="../application2%20tutorial/index.html">Water Cycle Application Tutorial</a>
+        			<a href="../application3%20tutorial/index.html">Delta 18O and Insolation Data Graph Application Tutorial</a>
+        		</div>
+        	  </div>
+        	  <li><a href="../Use%20in%20Class/index.html">In Class</a></li>
+        	  <li><a href="../references/index.html">References</a></li>
+        	</ul>
+        </div>
+		<div id="content">
+			<br>
+			<div id="t1">
+				Use in Class
+			</div>
+			<div id="tutorials">
+				<br>
+				<p> In the following of this page, some details about how to use this project in a class setting are provided.
+				It is recommended that teachers can go over these applications in the sequence that they are introduced in this page in
+				class so that students can get familiar with the content step by step.
+				</p>
+				<br>
+				<p>
+					In all the forms below, the Introductory Question Example section is examples of questions that teachers can
+					ask before jumping into the application or when transitting from one application to another. The Steps to Take
+					section contains steps of instructions when teachers are presenting the applications to students. The Take-away
+					Question Example section has examples of some take-away questions that teachers can ask after finishing presenting
+					the applications.
+				</p>
+				<div id="subheading">
+					<h2 class="subheading_text">Earth Orbit Application</h1>
+				</div>
+				<table border="1px" cellspacing="0">
+					<col width = "400px">
+					<col width = "400px">
+					<tr height = "50px">
+						<td align="center">
+							Purpose
+						</td>
+						<td>
+							<ul>
+								<li>Introduction of Milankovitch Cycles (Earth Orbit Parameters) and their influences on insolation</li>
+							</ul>
+						</td>
+					</tr>
+					<tr height = "50px">
+						<td align = "center">
+							Introductory Question Example
+						</td>
+						<td>
+							<ul>
+								<li>Why does Earth experience seasons today? </li>
+								<li>How does seasonal variability look across different parts of the globe? </li>
+								<li>Why are the tropics usually warmer while the poles are usually cooler?</li>
+							</ul>
+						</td>
+					</tr>
+					<tr height = "50px">
+						<td align="center">
+							Steps to Take
+						</td>
+						<td>
+							<ul>
+								<li>Let students discuss the above questions.</li>
+								<li>Give a brief answer that seasons are as a result of changes in Earth's rotation orbit.</i>
+								<li>Let students play with this application to understand Earth orbit's influences on insolation.</li>
+								<li>Make them think about and recognize the periodical patterns of the orbital parameters and insolation and differences in these patterns.</li>
+								<li>Bring the idea that earth orbit can also have a huge influence on other climatic phenomena, such as Ice Ages.</li>
+							</ul>
+						</td>
+					</tr>
+					<tr height = "50px">
+						<td align = "center">
+							Take-away Question Example
+						</td>
+						<td>
+							<ul>
+								<li>Why do the changes of earth’s orbits and insolation look not very prominent in the recent 500 years?</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<div id="subheading">
+					<h2 class="subheading_text">Water Cycle Application</h1>
+				</div>
+				<table border="1px" cellspacing="0">
+					<col width = "400px">
+					<col width = "400px">
+					<tr height = "50px">
+						<td align="center">
+							Purpose
+						</td>
+						<td>
+							<ul>
+								<li>Introduction of oxygen isotopes (delta 18O) as an indicator of ice volume</li>
+							</ul>
+						</td>
+					</tr>
+					<tr height = "50px">
+						<td align = "center">
+							Introductory Question Example
+						</td>
+						<td>
+							<ul>
+								<li>How do we know when ice ages (glacial periods) occured in history? </li>
+							</ul>
+						</td>
+					</tr>
+					<tr height = "50px">
+						<td align="center">
+							Steps to Take
+						</td>
+						<td>
+							<ul>
+								<li>Let students discuss the above questions.</li>
+								<li>Let students play with the second application to understand why we want to look at Delta 18O data in this project.</li>
+								<li>Make them identify the relation between Delta 18O value and ice volume.</li>
+							</ul>
+						</td>
+					</tr>
+					<tr height = "50px">
+						<td align = "center">
+							Take-away Question Example
+						</td>
+						<td>
+							<ul>
+								<li>If we see that the amount of Oxygen-18 is higher than normal in a period of the past, then what was going on with the ice volume and the ocean? (usually O-18: 0.2%, O-16: 99.8%)</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<div id="subheading">
+					<h2 class="subheading_text">Delta 18O and Insolation Data Graph Application</h1>
+				</div>
+				<table border="1px" cellspacing="0">
+					<col width = "400px">
+					<col width = "400px">
+					<tr height = "50px">
+						<td align="center">
+							Purpose
+						</td>
+						<td>
+							<ul>
+								<li>Comparison of insolation and delta 18O data to show solar radiation's influences on ice volume and why it is not the only factor</li>
+							</ul>
+						</td>
+					</tr>
+					<tr height = "50px">
+						<td align = "center">
+							Introductory Question Example
+						</td>
+						<td>
+							<ul>
+								<li>How would the correlation between solar radiation and the size of ice volume look like? </li>
+							</ul>
+						</td>
+					</tr>
+					<tr height = "50px">
+						<td align="center">
+							Steps to Take
+						</td>
+						<td>
+							<ul>
+								<li>Let students discuss the above questions.</li>
+								<li>Show the d18O record by itself first. Students first need to understand what the upward and downward trends in d18O mean in terms of ice volume (increasing means increasing ice, decreasing means decreasing ice). </li>
+								<li>Have them situate themselves in the graph by finding “the present” and think about how unique the present looks compared to the rest of the last 800,000 years.</li>
+								<li>Have them think about the timing of previous ice ages by looking at upward and downward trends in the d18O data and recognizing the “saw-tooth” pattern.</li>
+								<li>Then overlay the insolation data on the d18O record. Let them see the examples to know what the general correlation between these two things should look like. </li>
+							</ul>
+						</td>
+					</tr>
+					<tr height = "50px">
+						<td align = "center">
+							Take-away Question Example
+						</td>
+						<td>
+							<ul>
+								<li>Based on our understanding of orbital parameters and the timing of variability, we might expect that the Earth would descend back into an ice age some time over the next few thousand years. But the graph does not show such a trend, why?</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<br>
+		</div>
+        <div id="end">
+        	For updates to this website, please contact Clark Xie (xiezhengkai199982@gmail.com).
+        </div>
+    </body>
+</html>
